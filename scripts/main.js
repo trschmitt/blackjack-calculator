@@ -22,10 +22,13 @@ function handValue (cards) {
 
     if (cards[i] === "J" || cards[i] === "Q" || cards[i] === "K") {
       cards[i] = "10";
-    }else if (cards[i] === "A") {
+    } else if (cards[i] === "A") {
       cards[i] = "11";
     }
     totalValue = parseInt(cards[i]) + totalValue;
+    if (totalValue > 21) {
+      totalValue -= 10;
+    }
   }
   return totalValue;
 }
