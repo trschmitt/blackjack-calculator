@@ -5,15 +5,27 @@
    to watch the assertions pass as you write your code.
 
    Also remember, that the parameter `hand` will be an array, so
-   you'll need to parse through that first before you can start to 
+   you'll need to parse through that first before you can start to
    write your logic.
 */
 
+//cards #=> ["2"]
 
-function handValue (hand) {
+function handValue (cards) {
+  let totalValue = 0;
+
+  totalValue = parseInt(cards[0]) + totalValue;
+
+  // TODO: Loop over cards and convert to total value
+    // TODO: convert string value into number
+    // TODO: add numerical value to total value
 
 
-  return;
+
+  // TODO: convert string values into numbers
+
+
+  return totalValue;
 }
 
 
