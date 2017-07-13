@@ -10,19 +10,19 @@
 */
 
 //cards #=> ["2"]
+// TODO: Loop over cards and convert to total value
+  // TODO: convert string value into number
+  // TODO: add numerical value to total value
 
 function handValue (cards) {
   let totalValue = 0;
 
-  totalValue = parseInt(cards[0]) + totalValue;
 
-  // TODO: Loop over cards and convert to total value
-    // TODO: convert string value into number
-    // TODO: add numerical value to total value
+  for (let i = 0; i < cards.length; i++) {
 
+    totalValue = parseInt(cards[i]) + totalValue;
+  }
 
-
-  // TODO: convert string values into numbers
 
 
   return totalValue;
