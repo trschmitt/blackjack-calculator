@@ -20,8 +20,10 @@ function handValue (cards) {
 
   for (let i = 0; i < cards.length; i++) {
 
-    if (cards[i] === "J" || cards[i] === "Q" || cards[i] === "K" || cards[i] === "A") {
+    if (cards[i] === "J" || cards[i] === "Q" || cards[i] === "K") {
       cards[i] = "10";
+    }else if (cards[i] === "A") {
+      cards[i] = "11";
     }
     totalValue = parseInt(cards[i]) + totalValue;
   }
